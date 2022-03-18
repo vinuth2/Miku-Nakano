@@ -74,14 +74,14 @@ buttons = [
 
 
 HELP_STRINGS = """
-*Hey your {} is here!  
-*Main* commands available :
- • /help: PM's you this message.
- • /help <module name>: PM's you info about that module.
- • /settings:
-   • in PM: will send you your settings for all supported modules.
-   • in a group: will redirect you to pm, with all that chat's settings.
-For all command use /* [or](https://telegra.ph/file/85a404cf9edbd797c829f.jpg) *!*
+Hey your {} is here!  
+*Helpful commands:*
+ - /help: PM's you this message.
+ - /help <module name>: PM's you info about that module.
+ - /settings:
+   • In PM: will send you your settings for all supported modules.
+   • In a group: will redirect you to pm, with all that chat's settings.
+For all command use / ! [.](https://telegra.ph/file/9e2f5cfae1145423c9203.jpg)
 All commands can be used with the following: / ! .
 """.format(
     dispatcher.bot.first_name,""
@@ -325,15 +325,24 @@ def miku_callback_data(update, context):
     uptime = get_readable_time((time.time() - StartTime))
     if query.data == "miku_":
         query.message.edit_text(
-            text=f"""*About*
+            text=f"""*About me*
                  \nHey! My name is [Marie](https://t.me/TheMarie_bot) ✨, a powerful group management bot built to help you manage your group easily.
-                 \nI have lots of handy features, such as flood control, a warning system, a note keeping system, and even predetermined replies on certain keywords. If you have any question about Marie, let us know at [Marie Support](https://t.me/MuiscUpdates_chat).""",
+                 \n*Why Marie:*
+                    *- Simple:* Marie brings you the best tools with a simple easy to use manner
+                    *- Featured:* Marie is the most featured group management bot ever made
+                    *- Fast:* Marie can do things faster in groups
+                    *- Independent:* Marie is Maintained by volunteers, No gbans, No sudo powers. All power belongs to you.
+                 \n[♚ Marie's Dev](https://t.me/ImVinuth)
+                 \n[💾 Source Code](https://github.com/Vinuth-Dinsitha/Marie-bot)
+                 \n[♕ Marie Support](http://t.me/MusicUpdates_chat)
+                 \nMarie has online since ```2022/3/17```
+If you have any question about Marie, let us know at [Marie Support](https://t.me/MusicUpdates_chat).""",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
                 [
                  [
-                    InlineKeyboardButton(text="🧔🏻‍♂ Developer", url="https://t.me/ImVinuth"),
+                    InlineKeyboardButton(text="🧑🏻‍💻 Developer", url="https://t.me/ImVinuth"),
                     InlineKeyboardButton(text="Try Inline", switch_inline_query_current_chat="",),
                  ],
                  [
