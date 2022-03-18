@@ -74,17 +74,14 @@ buttons = [
 
 
 HELP_STRINGS = """
-*Help*
-
-Hey! My name is Marie. I am a group management bot, here to help you get around and keep the order in your groups!
-
-*Helpful commands:*
- - /help: PM's you this message.
- - /help module name: PM's you info about that module.
- - /donate: Gives you info on how to support me and my creator.
- - /settings: In PM, will send you your settings for all supported modules. In a group, will redirect you to pm, with all that chat's settings.
-
-If you have any bugs or questions on how to use me, have a look at my [Dev](http://t.me/ImVinuth), or head to @Marie_Updates.
+*Hey your {} is here!  
+*Main* commands available :
+ • /help: PM's you this message.
+ • /help <module name>: PM's you info about that module.
+ • /settings:
+   • in PM: will send you your settings for all supported modules.
+   • in a group: will redirect you to pm, with all that chat's settings.
+For all command use /* [or](https://telegra.ph/file/85a404cf9edbd797c829f.jpg) *!*
 All commands can be used with the following: / ! .
 """.format(
     dispatcher.bot.first_name,""
