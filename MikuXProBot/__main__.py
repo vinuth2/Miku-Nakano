@@ -74,19 +74,23 @@ buttons = [
 
 
 HELP_STRINGS = """
-*Hey your {} is here!  
-*Main* commands available :
- • /help: PM's you this message.
- • /help <module name>: PM's you info about that module.
- • /settings:
-   • in PM: will send you your settings for all supported modules.
-   • in a group: will redirect you to pm, with all that chat's settings.
-For all command use /* [or](https://telegra.ph/file/85a404cf9edbd797c829f.jpg) *!*
+*Help*
+
+Hey! My name is Marie. I am a group management bot, here to help you get around and keep the order in your groups!
+
+*Helpful commands:*
+ - /help: PM's you this message.
+ - /help module name: PM's you info about that module.
+ - /donate: Gives you info on how to support me and my creator.
+ - /settings: In PM, will send you your settings for all supported modules. In a group, will redirect you to pm, with all that chat's settings.
+
+If you have any bugs or questions on how to use me, have a look at my [Dev](http://t.me/ImVinuth), or head to @Marie_Updates.
+All commands can be used with the following: / ! .
 """.format(
     dispatcher.bot.first_name,""
     if not ALLOW_EXCL else "\nAll commands can either be used with / or !.\nKindly use ! for commands if / is not working\n")
 
-DONATE_STRING = """ Adding Me To Your Groups Is Donation For Me """
+DONATE_STRING = """I'm free for everyone ❤️ If you wanna make me smile, just join My [Channel](https://t.me/Marie_Updates)"""
 
 IMPORTED = {}
 MIGRATEABLE = []
@@ -222,11 +226,11 @@ def start(update: Update, context: CallbackContext):
                 [
                   [                  
                        InlineKeyboardButton(
-                             text="Support🚑",
-                             url=f"https://t.me/MikusSupport"),
+                             text="Support",
+                             url=f"https://t.me/MusicUpdates_chat"),
                        InlineKeyboardButton(
-                             text="Updates🛰️",
-                             url="https://t.me/MikuXUpdates")
+                             text="Updates",
+                             url="https://t.me/Marie_Updates")
                      ] 
                 ]
             ),
@@ -284,7 +288,7 @@ def help_button(update, context):
                 reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton(text="Back",
                                        callback_data="help_back"),
                   InlineKeyboardButton(text="Support",
-                                       url="t.me/Mikussupport")]]))
+                                       url="https://t.me/MusicUpdates_chat")]]))
 
         elif prev_match:
             curr_page = int(prev_match.group(1))
@@ -326,8 +330,7 @@ def miku_callback_data(update, context):
         query.message.edit_text(
             text=f"""*About*
                  \nHey! My name is [Marie](https://t.me/TheMarie_bot) ✨, a powerful group management bot built to help you manage your group easily.
-                 \nI have lots of handy features, such as flood control, a warning system, a note keeping system, and even predetermined replies on certain keywords.
-                   If you have any question about Marie, let us know at [Marie Support](https://t.me/MuiscUpdates_chat).""",
+                 \nI have lots of handy features, such as flood control, a warning system, a note keeping system, and even predetermined replies on certain keywords. If you have any question about Marie, let us know at [Marie Support](https://t.me/MuiscUpdates_chat).""",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
@@ -386,7 +389,7 @@ def get_help(update: Update, context: CallbackContext):
             reply_markup=InlineKeyboardMarkup(
                 [
                   [
-                  InlineKeyboardButton(text=" Click here", url="https://t.me/MikuXProBot?start=help")
+                  InlineKeyboardButton(text=" Click here", url="https://t.me/TheMarie_bot?start=help")
                   ]
                 ]
             ),
@@ -403,7 +406,7 @@ def get_help(update: Update, context: CallbackContext):
                 [[InlineKeyboardButton(text="Back",
                                        callback_data="help_back"),
                   InlineKeyboardButton(text="Support",
-                                       url="t.me/Mikussupport")]]))
+                                       url="t.me/MusicUpdates_chat")]]))
 
     else:
         send_help(chat.id, HELP_STRINGS)
@@ -601,8 +604,8 @@ def main():
                 [
                   [                  
                        InlineKeyboardButton(
-                             text="[► Summon Me◄]",
-                             url="https://t.me/MikuXProBot?startgroup=true")
+                             text="Add me to your chat",
+                             url="https://t.me/TheMarie_bot?startgroup=true")
                      ] 
                 ]
             ),
