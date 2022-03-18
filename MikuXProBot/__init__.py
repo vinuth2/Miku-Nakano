@@ -24,7 +24,7 @@ logging.basicConfig(
               logging.StreamHandler()],
     level=logging.INFO)
 
-LOGGER = logging.getLogger("[MikuXProbot]")
+LOGGER = logging.getLogger("[@Testtoipbot]")
 
 log = logging.getLogger('[Your Bot Is Building]')
 
@@ -263,7 +263,7 @@ BOT_USERNAME = bottie.username
 BOT_NAME = bottie.first_name
 BOT_MENTION = bottie.mention
 
-if "@MikuXProBot" not in PM_START_TEXT:
+if "@Testtoipbot" not in PM_START_TEXT:
     LOGGER.critical(f"{OWNER_ID} Is Cheating. Add `Hit /help to find out more about how to use me to my full potential.` In PM_START_TEXT To Fix This")
     sys.exit(1)
 else:
