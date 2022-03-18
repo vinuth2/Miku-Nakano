@@ -1,4 +1,4 @@
-PM_START_TEXT = """────「 [{}]({}) 」────\nHey there! my nane is *Marie*\nI am an Anime themed group management with some fun features.\n\nHit /help to find out more about how to use me to my full potential."""
+PM_START_TEXT = """────「 [{}]({}) 」────\nHey there! my nane is *Marie* ✨\nI am an Anime themed group management with some fun features.\n\nHit /help to find out more about how to use me to my full potential."""
 
 MIKU_IMG = (
       "https://telegra.ph/file/3f06de01df5bc3c3cf343.jpg",
