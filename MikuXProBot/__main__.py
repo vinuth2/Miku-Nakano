@@ -324,29 +324,24 @@ def miku_callback_data(update, context):
     uptime = get_readable_time((time.time() - StartTime))
     if query.data == "miku_":
         query.message.edit_text(
-            text=f"""Hello [{update.effective_user.first_name}](tg://user?id={update.effective_user.id}) I'm {context.bot.first_name}, a powerful group management bot built to help you manage your group easily.
-                 \n❍ I can restrict users.
-                 \n❍ I can greet users with customizable welcome messages and even set a group's rules.
-                 \n❍ I have an advanced anti-flood system.
-                 \n❍ I can warn users until they reach max warns, with each predefined actions such as ban, mute, kick, etc.
-                 \n❍ I have a note keeping system, blacklists, and even predetermined replies on certain keywords.
-                 \n❍ I check for admins' permissions before executing any command and more stuffs
-                 \n❍ Miku licensed under the GNU General Public License v3.0
-                 \n❍ If you have any question about Miku, let us know at [Miku Support](t.me/{SUPPORT_CHAT}).""",
+            text=f"""*About*
+                 \nHey! My name is [Marie](https://t.me/TheMarie_bot) ✨, a powerful group management bot built to help you manage your group easily.
+                 \nI have lots of handy features, such as flood control, a warning system, a note keeping system, and even predetermined replies on certain keywords.
+                   If you have any question about Marie, let us know at [Marie Support](https://t.me/MuiscUpdates_chat).""",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
                 [
                  [
-                    InlineKeyboardButton(text="My Master 🌏", url="t.me/h0daka"),
-                    InlineKeyboardButton(text="Try Inline ✨", switch_inline_query_current_chat="",),
+                    InlineKeyboardButton(text="🧔🏻‍♂ Developer", url="https://t.me/ImVinuth"),
+                    InlineKeyboardButton(text="Try Inline", switch_inline_query_current_chat="",),
                  ],
                  [
-                    InlineKeyboardButton(text="Updates 🕊️", url="t.me/MikuXUpdates"),
-                    InlineKeyboardButton(text="Support 🚑", url="t.me/Mikussupport"),
+                    InlineKeyboardButton(text="🔄 Updates", url="https://t.me/Marie_updates"),
+                    InlineKeyboardButton(text="💬 Support", url="https://t.me/MusicUpdates_chat"),
                  ],
                  [
-                    InlineKeyboardButton(text="Back ❌", callback_data="miku_back")
+                    InlineKeyboardButton(text="Back", callback_data="miku_back")
                  ],
                 ]
             ),
