@@ -336,7 +336,7 @@ def miku_callback_data(update, context):
                  \n[💾 Source Code](https://github.com/Vinuth-Dinsitha/Marie-bot)
                  \n[♕ Marie Support](http://t.me/MusicUpdates_chat)
                  \nMarie has online since ```2022/3/17```
-If you have any question about Marie, let us know at [Marie Support](https://t.me/MusicUpdates_chat).""",
+If you have any question about Marie, let us know at [Support](https://t.me/MusicUpdates_chat).""",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
@@ -350,7 +350,7 @@ If you have any question about Marie, let us know at [Marie Support](https://t.m
                     InlineKeyboardButton(text="💬 Support", url="https://t.me/MusicUpdates_chat"),
                  ],
                  [
-                    InlineKeyboardButton(text="Back", callback_data="miku_back")
+                    InlineKeyboardButton(text="« Back", callback_data="miku_back")
                  ],
                 ]
             ),
