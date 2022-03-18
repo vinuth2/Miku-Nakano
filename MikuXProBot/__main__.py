@@ -56,15 +56,15 @@ def get_readable_time(seconds: int) -> str:
 buttons = [
     [
                         InlineKeyboardButton(
-                             text="Summon Me 🏹",
+                             text="Summon Me 😇",
                              url="https://t.me/MikuXProBot?startgroup=true"),
                         InlineKeyboardButton(
-                             text="Repo 🗞️",
+                             text="Repo 👻",
                              url="https://github.com/h0daka/Miku-Nakano"),
                     ],
                    [                  
                        InlineKeyboardButton(
-                             text="Help 🔐",
+                             text="Help 🐞",
                              callback_data="help_back"),
                         InlineKeyboardButton(
                              text="About Me 💫",
